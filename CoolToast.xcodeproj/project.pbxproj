@@ -1,0 +1,898 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA13CBD822CC804000AD1287 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA13CBD722CC804000AD1287 /* QuartzCore.framework */; };
+		AA13CBDA22CDAD3D00AD1287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA13CBD922CDAD3D00AD1287 /* Assets.xcassets */; };
+		AA61CBD222CFA31800AAD118 /* CTView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA61CBD022CFA31800AAD118 /* CTView.h */; };
+		AA61CBD322CFA31800AAD118 /* CTView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA61CBD122CFA31800AAD118 /* CTView.m */; };
+		AAE80BAF22C64F11009C794F /* CoolToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE80BA522C64F11009C794F /* CoolToast.framework */; };
+		AAE80BB422C64F11009C794F /* CoolToastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE80BB322C64F11009C794F /* CoolToastTests.m */; };
+		AAE80BB622C64F11009C794F /* CoolToast.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE80BA822C64F11009C794F /* CoolToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAE80BC722C65000009C794F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE80BC622C65000009C794F /* AppDelegate.m */; };
+		AAE80BCA22C65000009C794F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE80BC922C65000009C794F /* ViewController.m */; };
+		AAE80BCC22C65002009C794F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE80BCB22C65002009C794F /* Assets.xcassets */; };
+		AAE80BCF22C65002009C794F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE80BCD22C65002009C794F /* Main.storyboard */; };
+		AAE80BD222C65002009C794F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE80BD122C65002009C794F /* main.m */; };
+		AAE80BDD22C65003009C794F /* TestCoolToastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE80BDC22C65003009C794F /* TestCoolToastTests.m */; };
+		AAE80BE822C65003009C794F /* TestCoolToastUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE80BE722C65003009C794F /* TestCoolToastUITests.m */; };
+		AAE80BF922C6525B009C794F /* CTCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE80BF722C6525B009C794F /* CTCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAE80BFA22C6525B009C794F /* CTCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE80BF822C6525B009C794F /* CTCommon.m */; };
+		AAE80BFE22C653F0009C794F /* ToastWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE80BFB22C653F0009C794F /* ToastWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAE80BFF22C653F0009C794F /* ToastWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE80BFC22C653F0009C794F /* ToastWindowController.m */; };
+		AAE80C0022C653F0009C794F /* ToastWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE80BFD22C653F0009C794F /* ToastWindowController.xib */; };
+		AAE80C0822C65C66009C794F /* CoolToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE80BA522C64F11009C794F /* CoolToast.framework */; };
+		AAE80C0922C65C66009C794F /* CoolToast.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AAE80BA522C64F11009C794F /* CoolToast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AAFF531A22C9A978004A683D /* CTScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFF531822C9A978004A683D /* CTScreen.h */; };
+		AAFF531B22C9A978004A683D /* CTScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF531922C9A978004A683D /* CTScreen.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAE80BB022C64F11009C794F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE80B9C22C64F11009C794F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAE80BA422C64F11009C794F;
+			remoteInfo = CoolToast;
+		};
+		AAE80BD922C65003009C794F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE80B9C22C64F11009C794F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAE80BC222C65000009C794F;
+			remoteInfo = TestCoolToast;
+		};
+		AAE80BE422C65003009C794F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE80B9C22C64F11009C794F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAE80BC222C65000009C794F;
+			remoteInfo = TestCoolToast;
+		};
+		AAE80C0A22C65C66009C794F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE80B9C22C64F11009C794F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAE80BA422C64F11009C794F;
+			remoteInfo = CoolToast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AAE80C0C22C65C66009C794F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AAE80C0922C65C66009C794F /* CoolToast.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA13CBD722CC804000AD1287 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AA13CBD922CDAD3D00AD1287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA61CBD022CFA31800AAD118 /* CTView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTView.h; sourceTree = "<group>"; };
+		AA61CBD122CFA31800AAD118 /* CTView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTView.m; sourceTree = "<group>"; };
+		AAE80BA522C64F11009C794F /* CoolToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoolToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE80BA822C64F11009C794F /* CoolToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoolToast.h; sourceTree = "<group>"; };
+		AAE80BA922C64F11009C794F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE80BAE22C64F11009C794F /* CoolToastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolToastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE80BB322C64F11009C794F /* CoolToastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoolToastTests.m; sourceTree = "<group>"; };
+		AAE80BB522C64F11009C794F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE80BC322C65000009C794F /* TestCoolToast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCoolToast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE80BC522C65000009C794F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AAE80BC622C65000009C794F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AAE80BC822C65000009C794F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AAE80BC922C65000009C794F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AAE80BCB22C65002009C794F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAE80BCE22C65002009C794F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAE80BD022C65002009C794F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE80BD122C65002009C794F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAE80BD322C65002009C794F /* TestCoolToast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestCoolToast.entitlements; sourceTree = "<group>"; };
+		AAE80BD822C65003009C794F /* TestCoolToastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCoolToastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE80BDC22C65003009C794F /* TestCoolToastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCoolToastTests.m; sourceTree = "<group>"; };
+		AAE80BDE22C65003009C794F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE80BE322C65003009C794F /* TestCoolToastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCoolToastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE80BE722C65003009C794F /* TestCoolToastUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCoolToastUITests.m; sourceTree = "<group>"; };
+		AAE80BE922C65003009C794F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE80BF722C6525B009C794F /* CTCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCommon.h; sourceTree = "<group>"; };
+		AAE80BF822C6525B009C794F /* CTCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCommon.m; sourceTree = "<group>"; };
+		AAE80BFB22C653F0009C794F /* ToastWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastWindowController.h; sourceTree = "<group>"; };
+		AAE80BFC22C653F0009C794F /* ToastWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastWindowController.m; sourceTree = "<group>"; };
+		AAE80BFD22C653F0009C794F /* ToastWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastWindowController.xib; sourceTree = "<group>"; };
+		AAFF531822C9A978004A683D /* CTScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTScreen.h; sourceTree = "<group>"; };
+		AAFF531922C9A978004A683D /* CTScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTScreen.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAE80BA222C64F11009C794F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE80BAB22C64F11009C794F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE80BAF22C64F11009C794F /* CoolToast.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE80BC022C65000009C794F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA13CBD822CC804000AD1287 /* QuartzCore.framework in Frameworks */,
+				AAE80C0822C65C66009C794F /* CoolToast.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE80BD522C65003009C794F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE80BE022C65003009C794F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAE80B9B22C64F11009C794F = {
+			isa = PBXGroup;
+			children = (
+				AA13CBD922CDAD3D00AD1287 /* Assets.xcassets */,
+				AAE80BA722C64F11009C794F /* CoolToast */,
+				AAE80BB222C64F11009C794F /* CoolToastTests */,
+				AAE80BC422C65000009C794F /* TestCoolToast */,
+				AAE80BDB22C65003009C794F /* TestCoolToastTests */,
+				AAE80BE622C65003009C794F /* TestCoolToastUITests */,
+				AAE80BA622C64F11009C794F /* Products */,
+				AAE80C0122C65C44009C794F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AAE80BA622C64F11009C794F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAE80BA522C64F11009C794F /* CoolToast.framework */,
+				AAE80BAE22C64F11009C794F /* CoolToastTests.xctest */,
+				AAE80BC322C65000009C794F /* TestCoolToast.app */,
+				AAE80BD822C65003009C794F /* TestCoolToastTests.xctest */,
+				AAE80BE322C65003009C794F /* TestCoolToastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAE80BA722C64F11009C794F /* CoolToast */ = {
+			isa = PBXGroup;
+			children = (
+				AAE80BA822C64F11009C794F /* CoolToast.h */,
+				AAE80BF722C6525B009C794F /* CTCommon.h */,
+				AAE80BF822C6525B009C794F /* CTCommon.m */,
+				AAE80BFB22C653F0009C794F /* ToastWindowController.h */,
+				AAE80BFC22C653F0009C794F /* ToastWindowController.m */,
+				AAE80BFD22C653F0009C794F /* ToastWindowController.xib */,
+				AAE80BA922C64F11009C794F /* Info.plist */,
+				AAFF531822C9A978004A683D /* CTScreen.h */,
+				AAFF531922C9A978004A683D /* CTScreen.m */,
+				AA61CBD022CFA31800AAD118 /* CTView.h */,
+				AA61CBD122CFA31800AAD118 /* CTView.m */,
+			);
+			path = CoolToast;
+			sourceTree = "<group>";
+		};
+		AAE80BB222C64F11009C794F /* CoolToastTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAE80BB322C64F11009C794F /* CoolToastTests.m */,
+				AAE80BB522C64F11009C794F /* Info.plist */,
+			);
+			path = CoolToastTests;
+			sourceTree = "<group>";
+		};
+		AAE80BC422C65000009C794F /* TestCoolToast */ = {
+			isa = PBXGroup;
+			children = (
+				AAE80BC522C65000009C794F /* AppDelegate.h */,
+				AAE80BC622C65000009C794F /* AppDelegate.m */,
+				AAE80BC822C65000009C794F /* ViewController.h */,
+				AAE80BC922C65000009C794F /* ViewController.m */,
+				AAE80BCB22C65002009C794F /* Assets.xcassets */,
+				AAE80BCD22C65002009C794F /* Main.storyboard */,
+				AAE80BD022C65002009C794F /* Info.plist */,
+				AAE80BD122C65002009C794F /* main.m */,
+				AAE80BD322C65002009C794F /* TestCoolToast.entitlements */,
+			);
+			path = TestCoolToast;
+			sourceTree = "<group>";
+		};
+		AAE80BDB22C65003009C794F /* TestCoolToastTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAE80BDC22C65003009C794F /* TestCoolToastTests.m */,
+				AAE80BDE22C65003009C794F /* Info.plist */,
+			);
+			path = TestCoolToastTests;
+			sourceTree = "<group>";
+		};
+		AAE80BE622C65003009C794F /* TestCoolToastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AAE80BE722C65003009C794F /* TestCoolToastUITests.m */,
+				AAE80BE922C65003009C794F /* Info.plist */,
+			);
+			path = TestCoolToastUITests;
+			sourceTree = "<group>";
+		};
+		AAE80C0122C65C44009C794F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA13CBD722CC804000AD1287 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AAE80BA022C64F11009C794F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE80BF922C6525B009C794F /* CTCommon.h in Headers */,
+				AAE80BFE22C653F0009C794F /* ToastWindowController.h in Headers */,
+				AAE80BB622C64F11009C794F /* CoolToast.h in Headers */,
+				AAFF531A22C9A978004A683D /* CTScreen.h in Headers */,
+				AA61CBD222CFA31800AAD118 /* CTView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AAE80BA422C64F11009C794F /* CoolToast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE80BB922C64F11009C794F /* Build configuration list for PBXNativeTarget "CoolToast" */;
+			buildPhases = (
+				AAE80BA022C64F11009C794F /* Headers */,
+				AAE80BA122C64F11009C794F /* Sources */,
+				AAE80BA222C64F11009C794F /* Frameworks */,
+				AAE80BA322C64F11009C794F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoolToast;
+			productName = CoolToast;
+			productReference = AAE80BA522C64F11009C794F /* CoolToast.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AAE80BAD22C64F11009C794F /* CoolToastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE80BBC22C64F11009C794F /* Build configuration list for PBXNativeTarget "CoolToastTests" */;
+			buildPhases = (
+				AAE80BAA22C64F11009C794F /* Sources */,
+				AAE80BAB22C64F11009C794F /* Frameworks */,
+				AAE80BAC22C64F11009C794F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAE80BB122C64F11009C794F /* PBXTargetDependency */,
+			);
+			name = CoolToastTests;
+			productName = CoolToastTests;
+			productReference = AAE80BAE22C64F11009C794F /* CoolToastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAE80BC222C65000009C794F /* TestCoolToast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE80BEA22C65003009C794F /* Build configuration list for PBXNativeTarget "TestCoolToast" */;
+			buildPhases = (
+				AAE80BBF22C65000009C794F /* Sources */,
+				AAE80BC022C65000009C794F /* Frameworks */,
+				AAE80BC122C65000009C794F /* Resources */,
+				AAE80C0C22C65C66009C794F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAE80C0B22C65C66009C794F /* PBXTargetDependency */,
+			);
+			name = TestCoolToast;
+			productName = TestCoolToast;
+			productReference = AAE80BC322C65000009C794F /* TestCoolToast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAE80BD722C65003009C794F /* TestCoolToastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE80BED22C65003009C794F /* Build configuration list for PBXNativeTarget "TestCoolToastTests" */;
+			buildPhases = (
+				AAE80BD422C65003009C794F /* Sources */,
+				AAE80BD522C65003009C794F /* Frameworks */,
+				AAE80BD622C65003009C794F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAE80BDA22C65003009C794F /* PBXTargetDependency */,
+			);
+			name = TestCoolToastTests;
+			productName = TestCoolToastTests;
+			productReference = AAE80BD822C65003009C794F /* TestCoolToastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAE80BE222C65003009C794F /* TestCoolToastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE80BF022C65003009C794F /* Build configuration list for PBXNativeTarget "TestCoolToastUITests" */;
+			buildPhases = (
+				AAE80BDF22C65003009C794F /* Sources */,
+				AAE80BE022C65003009C794F /* Frameworks */,
+				AAE80BE122C65003009C794F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAE80BE522C65003009C794F /* PBXTargetDependency */,
+			);
+			name = TestCoolToastUITests;
+			productName = TestCoolToastUITests;
+			productReference = AAE80BE322C65003009C794F /* TestCoolToastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAE80B9C22C64F11009C794F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Socoolby;
+				TargetAttributes = {
+					AAE80BA422C64F11009C794F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					AAE80BAD22C64F11009C794F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					AAE80BC222C65000009C794F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					AAE80BD722C65003009C794F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = AAE80BC222C65000009C794F;
+					};
+					AAE80BE222C65003009C794F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = AAE80BC222C65000009C794F;
+					};
+				};
+			};
+			buildConfigurationList = AAE80B9F22C64F11009C794F /* Build configuration list for PBXProject "CoolToast" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAE80B9B22C64F11009C794F;
+			productRefGroup = AAE80BA622C64F11009C794F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAE80BA422C64F11009C794F /* CoolToast */,
+				AAE80BAD22C64F11009C794F /* CoolToastTests */,
+				AAE80BC222C65000009C794F /* TestCoolToast */,
+				AAE80BD722C65003009C794F /* TestCoolToastTests */,
+				AAE80BE222C65003009C794F /* TestCoolToastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAE80BA322C64F11009C794F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA13CBDA22CDAD3D00AD1287 /* Assets.xcassets in Resources */,
+				AAE80C0022C653F0009C794F /* ToastWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE80BAC22C64F11009C794F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE80BC122C65000009C794F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE80BCC22C65002009C794F /* Assets.xcassets in Resources */,
+				AAE80BCF22C65002009C794F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE80BD622C65003009C794F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE80BE122C65003009C794F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAE80BA122C64F11009C794F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFF531B22C9A978004A683D /* CTScreen.m in Sources */,
+				AA61CBD322CFA31800AAD118 /* CTView.m in Sources */,
+				AAE80BFF22C653F0009C794F /* ToastWindowController.m in Sources */,
+				AAE80BFA22C6525B009C794F /* CTCommon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE80BAA22C64F11009C794F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE80BB422C64F11009C794F /* CoolToastTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE80BBF22C65000009C794F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE80BCA22C65000009C794F /* ViewController.m in Sources */,
+				AAE80BD222C65002009C794F /* main.m in Sources */,
+				AAE80BC722C65000009C794F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE80BD422C65003009C794F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE80BDD22C65003009C794F /* TestCoolToastTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE80BDF22C65003009C794F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE80BE822C65003009C794F /* TestCoolToastUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAE80BB122C64F11009C794F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAE80BA422C64F11009C794F /* CoolToast */;
+			targetProxy = AAE80BB022C64F11009C794F /* PBXContainerItemProxy */;
+		};
+		AAE80BDA22C65003009C794F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAE80BC222C65000009C794F /* TestCoolToast */;
+			targetProxy = AAE80BD922C65003009C794F /* PBXContainerItemProxy */;
+		};
+		AAE80BE522C65003009C794F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAE80BC222C65000009C794F /* TestCoolToast */;
+			targetProxy = AAE80BE422C65003009C794F /* PBXContainerItemProxy */;
+		};
+		AAE80C0B22C65C66009C794F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAE80BA422C64F11009C794F /* CoolToast */;
+			targetProxy = AAE80C0A22C65C66009C794F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAE80BCD22C65002009C794F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAE80BCE22C65002009C794F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAE80BB722C64F11009C794F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AAE80BB822C64F11009C794F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AAE80BBA22C64F11009C794F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CoolToast/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socoolby.CoolToast;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AAE80BBB22C64F11009C794F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CoolToast/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socoolby.CoolToast;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AAE80BBD22C64F11009C794F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CoolToastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socoolby.CoolToastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AAE80BBE22C64F11009C794F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CoolToastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socoolby.CoolToastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AAE80BEB22C65003009C794F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestCoolToast/TestCoolToast.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestCoolToast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socoolby.TestCoolToast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AAE80BEC22C65003009C794F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestCoolToast/TestCoolToast.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestCoolToast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socoolby.TestCoolToast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AAE80BEE22C65003009C794F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestCoolToastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socoolby.TestCoolToastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCoolToast.app/Contents/MacOS/TestCoolToast";
+			};
+			name = Debug;
+		};
+		AAE80BEF22C65003009C794F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestCoolToastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socoolby.TestCoolToastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCoolToast.app/Contents/MacOS/TestCoolToast";
+			};
+			name = Release;
+		};
+		AAE80BF122C65003009C794F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestCoolToastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socoolby.TestCoolToastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestCoolToast;
+			};
+			name = Debug;
+		};
+		AAE80BF222C65003009C794F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestCoolToastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.socoolby.TestCoolToastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestCoolToast;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAE80B9F22C64F11009C794F /* Build configuration list for PBXProject "CoolToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE80BB722C64F11009C794F /* Debug */,
+				AAE80BB822C64F11009C794F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAE80BB922C64F11009C794F /* Build configuration list for PBXNativeTarget "CoolToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE80BBA22C64F11009C794F /* Debug */,
+				AAE80BBB22C64F11009C794F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAE80BBC22C64F11009C794F /* Build configuration list for PBXNativeTarget "CoolToastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE80BBD22C64F11009C794F /* Debug */,
+				AAE80BBE22C64F11009C794F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAE80BEA22C65003009C794F /* Build configuration list for PBXNativeTarget "TestCoolToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE80BEB22C65003009C794F /* Debug */,
+				AAE80BEC22C65003009C794F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAE80BED22C65003009C794F /* Build configuration list for PBXNativeTarget "TestCoolToastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE80BEE22C65003009C794F /* Debug */,
+				AAE80BEF22C65003009C794F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAE80BF022C65003009C794F /* Build configuration list for PBXNativeTarget "TestCoolToastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE80BF122C65003009C794F /* Debug */,
+				AAE80BF222C65003009C794F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAE80B9C22C64F11009C794F /* Project object */;
+}
