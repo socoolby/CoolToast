@@ -1,7 +1,6 @@
 # CoolToast
 A toast for mac  
-Carthate  
-
+### Carthate
 ##### Installation with Carthage (iOS 8+)
 
 [Carthage](https://github.com/Carthage/Carthage) is a lightweight dependency manager for Swift and Objective-C. It leverages CocoaTouch modules and is less invasive than CocoaPods.
@@ -60,10 +59,10 @@ Toast background color
 Show or hide application icon
 
 ### Delegate for Toast
-'''  
+```
 -(void)onCoolToastDismiss:(id)toastWindow;  
 -(void)onCoolToastClick:(id)toastWindow;  
-'''  
+```
 #  
 SourceCode:[CoolToast](https://github.com/socoolby/CoolToast)  
 Email:[socoolby@gmail.com](mailto:socoolby@gmail.com)
