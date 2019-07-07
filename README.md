@@ -1,13 +1,25 @@
 # CoolToast
-A toast for mac
+A toast for mac  
+Carthate  
 
-<img src="https://raw.githubusercontent.com/socoolby/CoolToast/master/Gifs/fade.gif" width="329" height="189"/>  
+##### Installation with Carthage (iOS 8+)
 
-<img src="https://raw.githubusercontent.com/socoolby/CoolToast/master/Gifs/show_from_top.gif" width="420" height="284"/>  
+[Carthage](https://github.com/Carthage/Carthage) is a lightweight dependency manager for Swift and Objective-C. It leverages CocoaTouch modules and is less invasive than CocoaPods.
 
-<img src="https://raw.githubusercontent.com/socoolby/CoolToast/master/Gifs/MousePosition.gif" width="419" height="165"/>  
+To install with Carthage, follow the instruction on [Carthage](https://github.com/Carthage/Carthage)
 
-<img src="https://raw.githubusercontent.com/socoolby/CoolToast/master/Gifs/scale.gif" width="420" height="286"/>  
+Cartfile
+```
+github "socoolby/CoolToast"
+```
+
+<img src="https://raw.githubusercontent.com/socoolby/CoolToast/master/Gifs/fade.gif" width="658" height="378"/>  
+
+<img src="https://raw.githubusercontent.com/socoolby/CoolToast/master/Gifs/show_from_top.gif" width="840" height="568"/>  
+
+<img src="https://raw.githubusercontent.com/socoolby/CoolToast/master/Gifs/MousePosition.gif" width="838" height="33"/>  
+
+<img src="https://raw.githubusercontent.com/socoolby/CoolToast/master/Gifs/scale.gif" width="840" height="572"/>  
 
 Params
 ### toastPostion default: CTPositionTop|CTPositionLeft
