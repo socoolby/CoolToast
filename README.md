@@ -11,7 +11,21 @@ Cartfile
 ```
 github "socoolby/CoolToast"
 ```
-
+### How to use
+1. Add CoolToast to your project
+2. Add CoolToast.framework to Targets->Generate->Embedded Binaries
+3. import <CoolToast/ToastWindowController.h>`
+4. code for demo
+```
+ToastWindowController *toastWindow=[ToastWindowController getToastWindow];
+toastWindow.animater=CTAnimaterFade;
+toastWindow.animaterTimeSecond=2;
+toastWindow.autoDismiss=NO;
+toastWindow.toastPostion=CTPositionCenter;
+toastWindow.maxWidth=250;
+toastWindow.delegate=self;
+[toastWindow showCoolToast:@"Animater Face\n Just do it."];
+```
 <img src="https://raw.githubusercontent.com/socoolby/CoolToast/master/Gifs/fade.gif" width="658" height="378"/>  
 
 <img src="https://raw.githubusercontent.com/socoolby/CoolToast/master/Gifs/show_from_top.gif" width="840" height="568"/>  
