@@ -30,7 +30,7 @@ toastWindow.delegate=self;
 
 <img src="https://raw.githubusercontent.com/socoolby/CoolToast/master/Gifs/show_from_top.gif" width="840" height="568"/>  
 
-<img src="https://raw.githubusercontent.com/socoolby/CoolToast/master/Gifs/MousePosition.gif" width="838" height="33"/>  
+<img src="https://raw.githubusercontent.com/socoolby/CoolToast/master/Gifs/MousePosition.gif" width="838" height="330"/>  
 
 <img src="https://raw.githubusercontent.com/socoolby/CoolToast/master/Gifs/scale.gif" width="840" height="572"/>  
 
