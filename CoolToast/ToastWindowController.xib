@@ -13,6 +13,7 @@
                 <outlet property="containerViewLeadingConstraint" destination="OHf-K5-bPE" id="K96-ZG-41o"/>
                 <outlet property="containerViewWidthConstraint" destination="eJR-1r-35c" id="ulz-su-hth"/>
                 <outlet property="iconImageCell" destination="fxz-vm-wAA" id="ZiZ-2a-6ed"/>
+                <outlet property="iconImageLeadingConstraint" destination="gI0-aZ-EbK" id="OsV-ER-YM5"/>
                 <outlet property="iconImageView" destination="nbp-0I-keC" id="tde-A2-VUE"/>
                 <outlet property="messageLabel" destination="NWy-Hj-H3G" id="l9C-ec-thn"/>
                 <outlet property="messageLabelLeadingConstraint" destination="Fz6-RQ-omV" id="fsY-Ma-MwL"/>

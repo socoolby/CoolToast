@@ -1,6 +1,6 @@
 # CoolToast
-A toast for mac  
-### Carthate
+A toast for mac(support Dark Mode)
+### Carthage
 ##### Installation with Carthage (iOS 8+)
 
 [Carthage](https://github.com/Carthage/Carthage) is a lightweight dependency manager for Swift and Objective-C. It leverages CocoaTouch modules and is less invasive than CocoaPods.
@@ -54,14 +54,14 @@ CTAnimaterTranslateFromBottom
 CTAnimaterNone
 
 
-### Position of maring to screen, not work for CTPositionCenter and CTPositionMouse  
+### Position of margin to screen, not work for CTPositionCenter and CTPositionMouse  
 leftOffset  
 topOffset  
 rightOffset  
 bottomOffset  
 
 ### autoDismiss and autoDismissTimeInSecond default :YES
-indicate the toast will auto dimiss and auto dismiss time
+indicate the toast will auto dismiss and auto dismiss time
 
 ### backgroundColor default : [NSColor clearColor]
 Toast Color
@@ -69,8 +69,11 @@ Toast Color
 ### toastBackgroundColor
 Toast background color
 
-### hiddenIcon defalut:NO
+### hiddenIcon default:NO
 Show or hide application icon
+
+### iconImage
+the icon image, if iconImage is nil then will default display Application's icon
 
 ### Delegate for Toast
 ```

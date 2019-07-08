@@ -21,6 +21,7 @@ static NSMutableArray<ToastWindowController*> *toastWindows;
 @property (weak) IBOutlet NSLayoutConstraint *containerTopConstraint;
 @property (weak) IBOutlet NSLayoutConstraint *messageTextFieldTrailingConstraint;
 @property (weak) IBOutlet NSLayoutConstraint *messageTextFieldLeadingConstraint;
+@property (weak) IBOutlet NSLayoutConstraint *iconImageLeadingConstraint;
 @end
 
 @implementation ToastWindowController
@@ -37,6 +38,7 @@ static NSMutableArray<ToastWindowController*> *toastWindows;
         _minHeight = 80;
         _toastPostion = CTPositionTop|CTPositionLeft;
         _backgroundColor = [NSColor clearColor];
+        _imageMarginLeft=15;
         
         _conerRadius = 6;
         _autoDismiss = YES;
@@ -109,6 +111,7 @@ static NSMutableArray<ToastWindowController*> *toastWindows;
     [self.window setLevel:NSPopUpMenuWindowLevel];
     self.messageLabel.stringValue=message;
     self.containerView.wantsLayer=YES;
+    self.iconImageLeadingConstraint.constant=_imageMarginLeft;
     NSClickGestureRecognizer *tap=[[NSClickGestureRecognizer alloc] initWithTarget:self action:@selector(onContainerDoubleClick:)];
     tap.numberOfClicksRequired=2;
     [self.containerView addGestureRecognizer:tap];
@@ -128,18 +131,20 @@ static NSMutableArray<ToastWindowController*> *toastWindows;
     [self.window setContentSize:NSMakeSize(focusedScreen.visibleFrame.size.width,focusedScreen.frame.size.height)];
     [self.window setFrameOrigin:NSMakePoint(focusedScreen.visibleFrame.origin.x,focusedScreen.visibleFrame.origin.y)];
     [self.messageLabel setFont:self.textFont];
-    int iconMargin=10;
-    int labelMargin=20;
+    int labelMargin=30;
     if(self.hiddenIcon)
         self.iconImageView.hidden=YES;
     else
     {
-        self.messageLabelLeadingConstraint.constant=self.iconImageView.frame.size.width+iconMargin;
-        self.iconImageCell.image= [NSApplication sharedApplication].applicationIconImage;
+        self.messageLabelLeadingConstraint.constant=self.iconImageView.frame.size.width+_imageMarginLeft;
+        if(self.iconImage==nil)
+            self.iconImageCell.image= [NSApplication sharedApplication].applicationIconImage;
+        else
+            self.iconImageCell.image= self.iconImage;
     }
     [self.containerView needsLayout];
     NSInteger iconWidth=self.iconImageView.frame.size.width;
-    NSInteger labelMaxWidth=self.maxWidth-labelMargin*2-(self.hiddenIcon?0:iconWidth+iconMargin);
+    NSInteger labelMaxWidth=self.maxWidth-labelMargin*2-(self.hiddenIcon?0:iconWidth+_imageMarginLeft);
     NSInteger labelWidth=[CTCommon calculateFont:message withFont:self.messageLabel.font].width;
     int lineCount=[CTCommon lineCountForText:message font:self.messageLabel.font withinWidth:labelMaxWidth];
     int labelHeight=_minHeight;
@@ -147,16 +152,15 @@ static NSMutableArray<ToastWindowController*> *toastWindows;
         labelHeight=_minHeight+(lineCount-2)*self.messageLabel.font.boundingRectForFont.size.height;
         labelWidth=labelMaxWidth;
     }
-    NSInteger windowWidth=labelWidth+iconWidth+labelMargin*2+iconMargin;
+    NSInteger windowWidth=labelWidth+iconWidth+labelMargin*2+_imageMarginLeft;
     if(windowWidth<_minWidth)
         windowWidth=_minWidth;
-//    windowWidth=1000;
     NSPoint windowPoint=[self getContainerPointWithWidth:windowWidth height:labelHeight currentScreen:focusedScreen];
     
     self.containerViewWidthConstraint.constant=windowWidth;
     self.containerViewHeightConstraint.constant=labelHeight;
     self.containerViewLeadingConstraint.constant=windowPoint.x;
-    self.messageTextFieldLeadingConstraint.constant=labelMargin;
+    self.messageTextFieldLeadingConstraint.constant=windowWidth-labelWidth-labelWidth-(self.hiddenIcon?0:_imageMarginLeft*2+self.iconImageView.frame.size.width);
     self.messageLabelLeadingConstraint.constant=labelMargin;
     self.containerTopConstraint.constant=windowPoint.y;
     [self.window makeKeyAndOrderFront:nil];

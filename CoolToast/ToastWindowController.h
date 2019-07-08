@@ -48,6 +48,8 @@ typedef NS_OPTIONS(NSUInteger,CTAnimater){
 @property (nonatomic) CTAnimater animater;
 @property (nonatomic) float animaterTimeSecond;
 @property (nonatomic) BOOL hiddenIcon;
+@property (nonatomic) int imageMarginLeft;
+@property (nonatomic) NSImage *iconImage;
 
 @property (nonatomic,strong) NSColor *backgroundColor;
 @property (nonatomic,strong) NSColor *toastBackgroundColor;

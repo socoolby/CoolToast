@@ -63,7 +63,8 @@
     self.toastWindow.animater=CTAnimaterTranslateFromTop;
     self.toastWindow.autoDismissTimeInSecond=2;
     self.toastWindow.toastPostion=CTPositionLeft|CTPositionTop;
-    [self.toastWindow showCoolToast:@"Animater From Top"];
+    self.toastWindow.imageMarginLeft=15;
+    [self.toastWindow showCoolToast:@"Animater From Top flip down and the text is long long long long"];
 }
 -(IBAction)testToastWithAnimaterFromRight:(id)sender{
     self.toastWindow=[ToastWindowController getToastWindow];
