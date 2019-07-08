@@ -36,6 +36,7 @@ typedef NS_OPTIONS(NSUInteger,CTAnimater){
 @property (weak) IBOutlet NSImageCell *iconImageCell;
 @property (nonatomic) NSInteger maxWidth;
 @property (nonatomic) NSInteger minWidth;
+@property (nonatomic) int minHeight;
 @property (nonatomic) NSInteger leftOffset;
 @property (nonatomic) NSInteger topOffset;
 @property (nonatomic) NSInteger rightOffset;

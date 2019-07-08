@@ -32,12 +32,13 @@ static NSMutableArray<ToastWindowController*> *toastWindows;
         _rightOffset = 50;
         _bottomOffset = 50;
         
-        _maxWidth = 426;
-        _minWidth = 200;
+        _maxWidth = 826;
+        _minWidth = 320;
+        _minHeight = 80;
         _toastPostion = CTPositionTop|CTPositionLeft;
         _backgroundColor = [NSColor clearColor];
         
-        _conerRadius = 4;
+        _conerRadius = 6;
         _autoDismiss = YES;
         _autoDismissTimeInSecond = 5;
         _animater=CTAnimaterFade;
@@ -141,12 +142,15 @@ static NSMutableArray<ToastWindowController*> *toastWindows;
     NSInteger labelMaxWidth=self.maxWidth-labelMargin*2-(self.hiddenIcon?0:iconWidth+iconMargin);
     NSInteger labelWidth=[CTCommon calculateFont:message withFont:self.messageLabel.font].width;
     int lineCount=[CTCommon lineCountForText:message font:self.messageLabel.font withinWidth:labelMaxWidth];
-    int labelHeight=50;
+    int labelHeight=_minHeight;
     if(lineCount>2){
-        labelHeight=50+(lineCount-2)*self.messageLabel.font.boundingRectForFont.size.height;
+        labelHeight=_minHeight+(lineCount-2)*self.messageLabel.font.boundingRectForFont.size.height;
         labelWidth=labelMaxWidth;
     }
     NSInteger windowWidth=labelWidth+iconWidth+labelMargin*2+iconMargin;
+    if(windowWidth<_minWidth)
+        windowWidth=_minWidth;
+//    windowWidth=1000;
     NSPoint windowPoint=[self getContainerPointWithWidth:windowWidth height:labelHeight currentScreen:focusedScreen];
     
     self.containerViewWidthConstraint.constant=windowWidth;

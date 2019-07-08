@@ -56,7 +56,7 @@
     self.toastWindow.animater=CTAnimaterTranslateFromLeft;
     self.toastWindow.autoDismissTimeInSecond=2;
     self.toastWindow.toastPostion=CTPositionLeft|CTPositionTop;
-    [self.toastWindow showCoolToast:@"Animater From Left"];
+    [self.toastWindow showCoolToast:@"Left"];
 }
 -(IBAction)testToastWithAnimaterFromTop:(id)sender{
     self.toastWindow=[ToastWindowController getToastWindow];
